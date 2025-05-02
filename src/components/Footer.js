@@ -39,7 +39,7 @@ const Footer = () => {
             <img src={linkedinlogo} alt="LinkedIn" className="profile-img-placeholder" />
               <i className="fab fa-linkedin"></i>
             </a>
-            <a href="https://github.com/guru6685" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/gurumadhavah" target="_blank" rel="noopener noreferrer">
             <img src={githublogo} alt="GitHub" className="profile-img-placeholder" />
               <i className="fab fa-github"></i>
             </a>
