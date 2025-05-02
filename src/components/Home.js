@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
-import myPhoto from 'E:/guru/portfolio/myportfolio/src/images/myphoto.jpg';
+import myPhoto from '../images/myphoto.jpg';
 
 const Home = () => {
   return (
