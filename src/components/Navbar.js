@@ -13,7 +13,8 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <button className="menu-toggle" onClick={toggleNavbar}>
-          <i className={isOpen ? "fas fa-times" : "fas fa-bars"}></i>
+        <span style={{ fontSize: '24px', cursor: 'pointer' }} className={isOpen ? "fas fa-times" : "fas fa-bars"}>&#9776;</span>
+          <i ></i>
         </button>
         <ul className={isOpen ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
