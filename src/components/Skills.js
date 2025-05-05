@@ -35,11 +35,11 @@ const Skills = () => {
     {
       category: 'Programming Languages',
       skills: [
-        { name: 'Python', icon: 'fab fa-python', image :pythonimg , level: 90  },
-        { name: 'Java', icon: 'fab fa-java', level: 85, image :javaimg },
-        { name: 'C', icon: 'fas fa-code', level: 75 ,image :cimg },
-        { name: 'Go', icon: 'fas fa-code', level: 30 ,image :goimg },
-        { name: 'SQL', icon: 'fas fa-database', level: 80 ,image: sqlimg }
+        { name: 'Python', icon: 'fab fa-python', image :pythonimg , level: 75  },
+        { name: 'Java', icon: 'fab fa-java', level: 70, image :javaimg },
+        { name: 'C', icon: 'fas fa-code', level: 85 ,image :cimg },
+        { name: 'Go', icon: 'fas fa-code', level: 20 ,image :goimg },
+        { name: 'SQL', icon: 'fas fa-database', level: 70 ,image: sqlimg }
       ]
     },
     {
@@ -48,24 +48,24 @@ const Skills = () => {
         { name: 'HTML', icon: 'fab fa-html5', level: 90 ,image: htmlimg },
         { name: 'CSS', icon: 'fab fa-css3-alt', level: 85  ,image: cssimg },
         { name: 'React', icon: 'fab fa-react', level: 50  ,image: reactimg },
-        { name: 'Node.js', icon: 'fab fa-node-js', level: 25 ,image: nodeimg },
-        { name: 'JavaScript', icon: 'fab fa-node-js', level: 60  ,image: javascriptimg }
+        { name: 'Node.js', icon: 'fab fa-node-js', level: 20 ,image: nodeimg },
+        { name: 'JavaScript', icon: 'fab fa-node-js', level: 55  ,image: javascriptimg }
       ]
     },
     {
       category: 'Machine Learning & AI',
       skills: [
-        { name: 'TensorFlow', icon: 'fas fa-brain', level: 80 ,image: tensorflowimg },
-        { name: 'OpenCV', icon: 'fas fa-camera', level: 85 ,image: opencvimg },
-        { name: 'Python Libraries', icon: 'fas fa-cogs', level: 90 ,image: pythonlibimg }
+        { name: 'TensorFlow', icon: 'fas fa-brain', level: 65 ,image: tensorflowimg },
+        { name: 'OpenCV', icon: 'fas fa-camera', level: 50 ,image: opencvimg },
+        { name: 'Python Libraries', icon: 'fas fa-cogs', level: 75 ,image: pythonlibimg }
       ]
     },
     {
       category: 'Hardware & IoT',
       skills: [
-        { name: 'Arduino', icon: 'fas fa-microchip', level: 95 ,image: arduinoimg },
-        { name: 'Sensors', icon: 'fas fa-satellite-dish', level: 90 ,image:sensoreimg },
-        { name: 'ESP32', icon: 'fas fa-wifi', level: 85 ,image: esp32img }
+        { name: 'Arduino', icon: 'fas fa-microchip', level: 85 ,image: arduinoimg },
+        { name: 'Sensors', icon: 'fas fa-satellite-dish', level: 80 ,image:sensoreimg },
+        { name: 'ESP32', icon: 'fas fa-wifi', level: 80 ,image: esp32img }
       ]
     },
     {
@@ -81,9 +81,9 @@ const Skills = () => {
     {
       category: 'Soft Skills',
       skills: [
-        { name: 'Leadership', icon: 'fas fa-users', level: 90 ,image: leadershipimg },
-        { name: 'Communication', icon: 'fas fa-comments', level: 95 ,image: communicationimg },
-        { name: 'Rapport Building', icon: 'fas fa-handshake', level: 85 ,image: reportbuildingimg },
+        { name: 'Leadership', icon: 'fas fa-users', level: 85 ,image: leadershipimg },
+        { name: 'Communication', icon: 'fas fa-comments', level: 80 ,image: communicationimg },
+        { name: 'Report Building', icon: 'fas fa-handshake', level: 85 ,image: reportbuildingimg },
         { name: 'Event Management', icon: 'fas fa-calendar-alt', level: 85 ,image: eventmanageimg }
       ]
     }
@@ -99,7 +99,7 @@ const Skills = () => {
             <div className="skills-grid">
               {category.skills.map((skill, skillIndex) => (
                 <div className="skill-item" key={skillIndex}>
-                 <div className="skill-icon">
+                  <div className="skill-icon">
   {skill.image ? (
     <img src={skill.image} alt={skill.name} className="skill-img" />
   ) : (
