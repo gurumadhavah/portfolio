@@ -10,6 +10,15 @@
     z-index: 100;
   }
   
+.logo img {
+  width: 50px;
+  height: auto;
+  background-color: black;
+  border-radius: 50%;
+}
+
+
+  
   .logo h1 {
     font-size: 1.8rem;
     font-weight: 700;

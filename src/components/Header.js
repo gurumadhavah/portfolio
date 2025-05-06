@@ -1,11 +1,12 @@
 import React from 'react';
 import './Header.css';
+import logo from '../images/logo.ico';
 
 const Header = ({ darkMode, toggleDarkMode }) => {
     return (
     <header className="header">
     <div className="logo">
-        <h1>Gurumadhava H</h1>
+        <img src={logo} alt="Gurumadhava H" />
     </div>
     <div className="dark-mode-toggle">
         <button onClick={toggleDarkMode}>
