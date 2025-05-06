@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Home.css';
 import myPhoto from '../images/myphoto.jpg';
+import './Home.css';
 
 const Home = () => {
   return (
@@ -27,6 +27,9 @@ const Home = () => {
           <div className="cta-buttons">
             <Link to="/contact" className="btn-blue">
               Contact Me
+            </Link>
+            <Link to="/src/Resume/SoftCopy of GURUMADHAVA_H.pdf" className="btn-blue">
+              Resume
             </Link>
           </div>
         </div>

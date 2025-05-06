@@ -6,6 +6,7 @@ import lunar from '../images/lunar.jpg';
 import quote from '../images/get-quotes-logo.png';
 import stopwatch from '../images/stopwatch.jpeg';
 import qr from '../images/qr.png';
+import brows_game from '../images/3dgame.png';
 import accident from '../images/accidentdetection.png';
 import home from '../images/smarthomeautomation.jpg';
 import irrigation from '../images/irigation.jpeg';
@@ -27,7 +28,8 @@ const Projects = () => {
       category: "ml",
       period: "Feb 2025 - Present",
       status: "Ongoing",
-      image :face
+      image :face,
+      /*link : "https://github.com/gurumadhavah/Quotes.git"*/
     },
     {
       id: 2,
@@ -37,7 +39,8 @@ const Projects = () => {
       category: "ml",
       period: "April 2024 - June 2024",
       status: "Ongoing",
-      image :customer
+      image :customer,
+      /*link : "https://github.com/gurumadhavah/customer_segmentation.git"*/
     },
     {
       id: 3,
@@ -47,18 +50,19 @@ const Projects = () => {
       category: "ml",
       period: "2024",
       status: "Ongoing",
-      image :lunar
+      image :lunar,
+      /*link : ""*/
     },
-   /* {
+   {
       id: 4,
       title: "Browser Shooting Game",
       description: "Interactive browser-based shooting game with multiple levels and features.",
       technologies: ["JavaScript", "HTML Canvas", "CSS"],
-      image: "browser-game.jpg",
+      image: brows_game,
       category: "web",
       period: "2024",
       status: "Ongoing"
-    },*/
+    },
     {
       id: 5,
       title: "Quotes Website",
