@@ -4,6 +4,7 @@ import linkedinlogo from '../images/likedIn.webp';
 import githublogo from '../images/githublogo.jpeg';
 import maillogo from '../images/maillogo.png';
 import calllogo from '../images/calllogo.jpeg';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -21,30 +22,43 @@ const Contact = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevData => ({
-      ...prevData,
+    setFormData(prev => ({
+      ...prev,
       [name]: value
     }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    // Here you would typically connect to a backend service
-    // For demonstration, we'll simulate a successful submission
-    setFormStatus({
-      submitted: true,
-      success: true,
-      message: 'Thank you for your message! I will get back to you soon.'
-    });
-    
-    // Reset form after submission
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-    });
+
+    emailjs.sendForm(
+      'service_5eaoynf',       // Replace with your service ID
+      'template_vin8uyc',      // Replace with your template ID
+      e.target,
+      '7FEgwJidkW0QNHSfz'      // Replace with your public key
+    ).then(
+      (result) => {
+        setFormStatus({
+          submitted: true,
+          success: true,
+          message: 'Thank you! Your message has been sent.'
+        });
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        });
+        e.target.reset(); // Optional: reset the form HTML
+      },
+      (error) => {
+        setFormStatus({
+          submitted: true,
+          success: false,
+          message: 'Oops! Something went wrong. Please try again later.'
+        });
+      }
+    );
   };
 
   return (
@@ -55,42 +69,37 @@ const Contact = () => {
         <div className="contact-info">
           <div className="contact-item">
             <div className="icon">
-            <img src={maillogo} alt="Mail" className="profile-img-placeholder" />
-              <i className="fas fa-envelope"></i>
+              <img src={maillogo} alt="Mail" className="profile-img-placeholder" />
             </div>
             <div className="details">
               <h3>Email</h3>
               <p><a href="mailto:gurumadhavah@gmail.com">gurumadhavah@gmail.com</a></p>
             </div>
           </div>
-          
+
           <div className="contact-item">
             <div className="icon">
-            <img src={calllogo} alt="Call" />
-              <i className="fas fa-phone"></i>
+              <img src={calllogo} alt="Call" />
             </div>
             <div className="details">
               <h3>Phone</h3>
-              
               <p><a href="tel:+918197076859">+91 8197076859</a></p>
             </div>
           </div>
-          
+
           <div className="contact-item">
             <div className="icon">
-            <img src={linkedinlogo} alt="LinkedIn" className="profile-img-placeholder" />
-              <i className="fab fa-linkedin"></i>
+              <img src={linkedinlogo} alt="LinkedIn" className="profile-img-placeholder" />
             </div>
             <div className="details">
               <h3>LinkedIn</h3>
               <p><a href="https://www.linkedin.com/in/gurumadhava-h-58514628b" target="_blank" rel="noopener noreferrer">Connect with me</a></p>
             </div>
           </div>
-          
+
           <div className="contact-item">
             <div className="icon">
-            <img src={githublogo} alt="GitHub" className="profile-img-placeholder" />
-              <i className="fab fa-github"></i>
+              <img src={githublogo} alt="GitHub" className="profile-img-placeholder" />
             </div>
             <div className="details">
               <h3>GitHub</h3>

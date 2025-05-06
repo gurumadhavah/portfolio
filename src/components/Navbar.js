@@ -42,6 +42,11 @@ const Navbar = () => {
               Achievements
             </NavLink>
           </li>
+          <li className="nav-item">
+            <NavLink to="/contact" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} onClick={() => setIsOpen(false)}>
+              Contact Me
+            </NavLink>
+          </li>
         </ul>
       </div>
     </nav>

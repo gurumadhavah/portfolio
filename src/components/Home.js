@@ -27,12 +27,9 @@ const Home = () => {
             </a>
           </div>
           <div className="cta-buttons">
-            <Link to="/contact" className="btn-blue">
-              Contact Me
-            </Link>
               <Link to={Resume} target="_blank"
               rel="noopener noreferrer" className="btn-blue">
-              Resume
+              View Resume
             </Link>
           </div>
         </div>
