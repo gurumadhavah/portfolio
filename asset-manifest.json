@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.0b088506.css",
-    "main.js": "/portfolio/static/js/main.6410d87c.js",
+    "main.js": "/portfolio/static/js/main.eb843802.js",
     "static/js/453.c937a3a2.chunk.js": "/portfolio/static/js/453.c937a3a2.chunk.js",
     "static/media/sae.jpg": "/portfolio/static/media/sae.11821fdd4ad380ecac06.jpg",
     "static/media/myphoto.jpg": "/portfolio/static/media/myphoto.b31ebf4f48faf63ea5c1.jpg",
@@ -18,6 +18,7 @@
     "static/media/genai.jpg": "/portfolio/static/media/genai.ab1a6fde8e10b426ffc1.jpg",
     "static/media/smarthomeautomation.jpg": "/portfolio/static/media/smarthomeautomation.5d39a19cabde0507e419.jpg",
     "static/media/yukthi.jpeg": "/portfolio/static/media/yukthi.2a7c8d600cc7c4e8ce0b.jpeg",
+    "static/media/SoftCopy_of_GURUMADHAVA_H.pdf": "/portfolio/static/media/SoftCopy_of_GURUMADHAVA_H.dbd32051e7741ac13a21.pdf",
     "static/media/vertex.jpg": "/portfolio/static/media/vertex.eaf606bf43eb099eff5b.jpg",
     "static/media/Customer-Segmentation.jpg": "/portfolio/static/media/Customer-Segmentation.890366055fb07133130b.jpg",
     "static/media/java.png": "/portfolio/static/media/java.fc241426afd8f52a312e.png",
@@ -50,11 +51,11 @@
     "static/media/report.jpeg": "/portfolio/static/media/report.7992c6a8f0c9e885e4ee.jpeg",
     "index.html": "/portfolio/index.html",
     "main.0b088506.css.map": "/portfolio/static/css/main.0b088506.css.map",
-    "main.6410d87c.js.map": "/portfolio/static/js/main.6410d87c.js.map",
+    "main.eb843802.js.map": "/portfolio/static/js/main.eb843802.js.map",
     "453.c937a3a2.chunk.js.map": "/portfolio/static/js/453.c937a3a2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0b088506.css",
-    "static/js/main.6410d87c.js"
+    "static/js/main.eb843802.js"
   ]
 }
