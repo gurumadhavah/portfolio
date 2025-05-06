@@ -28,7 +28,7 @@ const Home = () => {
             <Link to="/contact" className="btn-blue">
               Contact Me
             </Link>
-            <Link to="https://github.com/gurumadhavah/portfolio/blob/main/src/Resume/SoftCopy%20of%20GURUMADHAVA_H.pdf" className="btn-blue">
+            <Link to="https://github.com/gurumadhavah/portfolio/raw/refs/heads/main/src/Resume/SoftCopy%20of%20GURUMADHAVA_H.pdf" className="btn-blue">
               Resume
             </Link>
           </div>
