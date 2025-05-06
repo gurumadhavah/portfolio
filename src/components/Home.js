@@ -28,9 +28,13 @@ const Home = () => {
             <Link to="/contact" className="btn-blue">
               Contact Me
             </Link>
-            <Link to="https://github.com/gurumadhavah/portfolio/raw/refs/heads/main/src/Resume/SoftCopy%20of%20GURUMADHAVA_H.pdf" className="btn-blue">
+            <a
+              href="https://github.com/gurumadhavah/portfolio/raw/refs/heads/main/src/Resume/SoftCopy%20of%20GURUMADHAVA_H.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-blue">
               Resume
-            </Link>
+            </a>
           </div>
         </div>
         <div className="image-container">
