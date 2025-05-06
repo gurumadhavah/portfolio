@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import myPhoto from '../images/myphoto.jpg';
 import './Home.css';
+import Resume from './SoftCopy_of_GURUMADHAVA_H.pdf'
+
 
 const Home = () => {
   return (
@@ -28,13 +30,10 @@ const Home = () => {
             <Link to="/contact" className="btn-blue">
               Contact Me
             </Link>
-            <a
-              href="https://github.com/gurumadhavah/portfolio/raw/refs/heads/main/src/Resume/SoftCopy%20of%20GURUMADHAVA_H.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-blue">
+              <Link to={Resume} target="_blank"
+              rel="noopener noreferrer" className="btn-blue">
               Resume
-            </a>
+            </Link>
           </div>
         </div>
         <div className="image-container">
