@@ -32,10 +32,10 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      'service_5eaoynf',       // Replace with your service ID
-      'template_vin8uyc',      // Replace with your template ID
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
       e.target,
-      '7FEgwJidkW0QNHSfz'      // Replace with your public key
+      process.env.REACT_APP_EMAILJS_PUBLIC_KEY
     ).then(
       (result) => {
         setFormStatus({
