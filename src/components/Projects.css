@@ -253,3 +253,28 @@
     object-fit: cover;
   }
   
+  .project-actions {
+  margin-top: 1rem;
+}
+
+.github-btn {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.clickable-title {
+  transition: color 0.3s ease;
+}
+
+.clickable-title:hover {
+  color: #4a6cf7 !important;
+}

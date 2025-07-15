@@ -28,8 +28,8 @@ const Projects = () => {
       category: "ml",
       period: "Feb 2025 - Present",
       status: "Ongoing",
-      image :face,
-      /*link : "https://github.com/gurumadhavah/Quotes.git"*/
+      image: face,
+      link: "https://github.com/gurumadhavah/face_detection"
     },
     {
       id: 2,
@@ -39,8 +39,8 @@ const Projects = () => {
       category: "ml",
       period: "April 2024 - June 2024",
       status: "Ongoing",
-      image :customer,
-      /*link : "https://github.com/gurumadhavah/customer_segmentation.git"*/
+      image: customer,
+      link: "https://github.com/gurumadhavah/customer_segmentation"
     },
     {
       id: 3,
@@ -50,10 +50,10 @@ const Projects = () => {
       category: "ml",
       period: "2024",
       status: "Ongoing",
-      image :lunar,
-      /*link : ""*/
+      image: lunar,
+      link: "https://github.com/gurumadhavah/Major_project_Lunar_Survey"
     },
-   {
+    {
       id: 4,
       title: "Browser Shooting Game",
       description: "Interactive browser-based shooting game with multiple levels and features.",
@@ -61,7 +61,8 @@ const Projects = () => {
       image: brows_game,
       category: "web",
       period: "2024",
-      status: "Ongoing"
+      status: "Ongoing",
+      link: "https://github.com/gaganraip29/browser-game"
     },
     {
       id: 5,
@@ -71,7 +72,8 @@ const Projects = () => {
       category: "web",
       period: "2023",
       status: "Completed",
-      image :quote
+      image: quote,
+      link: "https://github.com/gurumadhavah/Quotes"
     },
     {
       id: 6,
@@ -81,7 +83,8 @@ const Projects = () => {
       category: "web",
       period: "2023",
       status: "Completed",
-      image :stopwatch
+      image: stopwatch,
+      link: "https://github.com/gurumadhavah/Stop_watch"
     },
     {
       id: 7,
@@ -91,7 +94,8 @@ const Projects = () => {
       category: "web",
       period: "2023",
       status: "Completed",
-      image :qr
+      image: qr,
+      link: "https://github.com/gurumadhavah/QR_Generator-"
     },
     {
       id: 8,
@@ -101,7 +105,7 @@ const Projects = () => {
       category: "hardware",
       period: "2023",
       status: "Completed",
-      image :accident
+      image: accident
     },
     {
       id: 9,
@@ -111,7 +115,7 @@ const Projects = () => {
       category: "hardware",
       period: "2023",
       status: "Completed",
-      image :home
+      image: home
     },
     {
       id: 10,
@@ -121,7 +125,7 @@ const Projects = () => {
       category: "hardware",
       period: "2023",
       status: "Completed",
-      image :gesture
+      image: gesture
     },
     {
       id: 11,
@@ -141,7 +145,7 @@ const Projects = () => {
       category: "hardware",
       period: "2022",
       status: "Completed",
-      image :dustbin
+      image: dustbin
     },
     {
       id: 13,
@@ -151,7 +155,7 @@ const Projects = () => {
       category: "hardware",
       period: "2022",
       status: "Completed",
-      image :pickplace
+      image: pickplace
     },
     {
       id: 14,
@@ -161,7 +165,7 @@ const Projects = () => {
       category: "software",
       period: "2022",
       status: "Completed",
-      image :sudoku
+      image: sudoku
     },
     {
       id: 15,
@@ -171,13 +175,19 @@ const Projects = () => {
       category: "software",
       period: "Oct 2024 - Nov 2024",
       status: "Completed",
-      image :employee
+      image: employee
     }
   ];
 
   const filteredProjects = filter === 'all' 
     ? projects 
     : projects.filter(project => project.category === filter);
+
+  const handleGitHubClick = (link) => {
+    if (link) {
+      window.open(link, '_blank');
+    }
+  };
 
   return (
     <section className="projects">
@@ -221,7 +231,7 @@ const Projects = () => {
           <div className="project-card" key={project.id}>
             <div className="project-img">
               <div className="img-placeholder">
-              <img src={project.image} alt={project.title} className="project-image" />
+                <img src={project.image} alt={project.title} className="project-image" />
                 <i className={
                   project.category === 'ml' ? 'fas fa-brain' :
                   project.category === 'web' ? 'fas fa-globe' :
@@ -234,7 +244,17 @@ const Projects = () => {
               </div>
             </div>
             <div className="project-info">
-              <h3 className="project-title">{project.title}</h3>
+              {project.link ? (
+                <h3 
+                  className="project-title clickable-title"
+                  onClick={() => handleGitHubClick(project.link)}
+                  style={{ cursor: 'pointer' }}
+                >
+                  {project.title}
+                </h3>
+              ) : (
+                <h3 className="project-title">{project.title}</h3>
+              )}
               <p className="project-period">{project.period}</p>
               <p className="project-description">{project.description}</p>
               <div className="project-tech">

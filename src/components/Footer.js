@@ -1,12 +1,11 @@
-import React from 'react';
-import './Footer.css';
 import { Link } from 'react-router-dom';
+import './Footer.css';
 import ScrollToTop from './ScrollToTop';
 
-import linkedinlogo from '../images/likedIn.webp';
-import githublogo from '../images/githublogo.jpeg';
-import maillogo from '../images/maillogo.png';
 import calllogo from '../images/calllogo.jpeg';
+import githublogo from '../images/githublogo.jpeg';
+import linkedinlogo from '../images/likedIn.webp';
+import maillogo from '../images/maillogo.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -35,7 +34,7 @@ const Footer = () => {
         <div className="footer-social">
           <h4>Connect With Me</h4>
           <div className="social-icons">
-            <a href="https://www.linkedin.com/in/gurumadhava-h-58514628b" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/gurumadhavah" target="_blank" rel="noopener noreferrer">
             <img src={linkedinlogo} alt="LinkedIn" className="profile-img-placeholder" />
               <i className="fab fa-linkedin"></i>
             </a>
